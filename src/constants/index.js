@@ -1,10 +1,8 @@
-import {
-  mobile,
-  backend,
-  creator,
-  web,
 
-} from "../assets";
+import web from "../assets/web.png";
+import creator from "../assets/creator.png";
+import backend from "../assets/backend.png";
+import mobile from "../assets/mobile.png";
 import docker from "../assets/tech/docker.png";
 import figma from "../assets/tech/figma.png";
 import git from "../assets/tech/git.png";
@@ -78,14 +76,7 @@ const services = [
 ];
 
 const technologies = [
-  {
-    name: "CSS",
-    icon: css,
-  },
-  {
-    name: "HTML",
-    icon: html,
-  },
+
   {
     name: "JavaScript",
     icon: javascript,
@@ -93,10 +84,6 @@ const technologies = [
   {
     name: "React JS",
     icon: reactjs,
-  },
-  {
-    name: "Tailwind CSS",
-    icon: tailwind,
   },
   {
     name: "Node JS",
@@ -107,16 +94,8 @@ const technologies = [
     icon: mongodb,
   },
   {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
     name: "git",
     icon: git,
-  },
-  {
-    name: "figma",
-    icon: figma,
   },
   {
     name: "docker",
