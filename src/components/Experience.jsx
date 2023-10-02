@@ -16,7 +16,7 @@ import { textVariant } from "../utils/motion";
 const ExperienceCard = ({ experience }) => {
   return (
     <VerticalTimelineElement
-    style={{ minHeight: "300px" }}
+      style={{ minHeight: "200px" }}
       contentStyle={{
         background: "#1d1836",
         color: "#fff",
@@ -29,7 +29,7 @@ const ExperienceCard = ({ experience }) => {
           <img
             src={experience.icon}
             alt={experience.company_name}
-            className='w-[60%] h-[60%] object-contain'
+            className='w-[90%] h-[90%] object-contain'
           />
         </div>
       }
@@ -60,16 +60,13 @@ const ExperienceCard = ({ experience }) => {
 
 const Experience = () => {
   return (
-    <div className='mt-10 flex flex-col items-center'> 
-      <motion.div variants={textVariant()}>
-        <p className={`${styles.sectionSubText} text-center`}>
-          Lo que he hecho hasta ahora...
-        </p>
-        <h2 className={`${styles.sectionHeadText} text-center`}>
-          Experiencia / Formación
-        </h2>
-      </motion.div>
-
+    <div className='mt-10 flex flex-col items-center' style={{ minHeight: '400px' }}>
+      <p className={`${styles.sectionSubText} text-center`}>
+        Lo que he hecho hasta ahora...
+      </p>
+      <h2 className={`${styles.sectionHeadText} text-center`}>
+        Experiencia / Formación
+      </h2>
       <div className='mt-20 flex flex-col'>
         <VerticalTimeline>
           {experiences.map((experience, index) => (
