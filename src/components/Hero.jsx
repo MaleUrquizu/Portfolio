@@ -1,9 +1,25 @@
+import React from "react";
 import { motion } from "framer-motion";
-
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
+import { useHistory } from "react-router-dom";
+import linkedin from "../assets/linkedin.png";
+import github from "../assets/Git-Hub.png";
 
 const Hero = () => {
+  const history = useHistory(); // Inicializa useHistory
+
+  // Funciones para redirigir a las URLs al hacer clic en las imágenes
+  const redirectToLinkedIn = () => {
+    const linkedinUrl = "https://www.linkedin.com/in/malenaurquizu/";
+    window.open(linkedinUrl, "_blank");
+  };
+
+  const redirectToGitHub = () => {
+    const githubUrl = "https://github.com/MaleUrquizu";
+    window.open(githubUrl, "_blank");
+  };
+
   return (
     <section className={`relative w-full h-screen mx-auto`}>
       <div
@@ -20,8 +36,34 @@ const Hero = () => {
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
             Desarrolladora Web <br className='sm:block hidden' />
-            Full-Stack 
+            Full-Stack
           </p>
+          <div>
+            {/* Llamamos a las funciones al hacer clic en las imágenes */}
+            <div className='cursor-pointer' onClick={redirectToLinkedIn}>
+              <div className='rounded-full overflow-hidden'>
+                <img
+                  src={linkedin}
+                  alt='Linkedin'
+                  width={60}
+                  height={60}
+                  className='w-50 h-50 object-cover'
+                />
+              </div>
+            </div>
+
+            <div className='cursor-pointer' onClick={redirectToGitHub}>
+              <div className='rounded-full overflow-hidden'>
+                <img
+                  src={github}
+                  alt='GitHub'
+                  width={60}
+                  height={60}
+                  className='w-50 h-50 object-cover'
+                />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -37,7 +79,7 @@ const Hero = () => {
               transition={{
                 duration: 1.5,
                 repeat: Infinity,
-                repeatType: "loop",
+                repeatType: 'loop',
               }}
               className='w-3 h-3 rounded-full bg-secondary mb-1'
             />
