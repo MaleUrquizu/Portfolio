@@ -54,6 +54,20 @@ export const navLinks = [
     id: "contact",
     title: "Contacto",
   },
+  {
+    id: "linkedin", // Un nuevo identificador para LinkedIn
+    title: "LinkedIn",
+    href: "https://www.linkedin.com/in/malenaurquizu/",
+    target: "_blank",
+    rel: "noopener noreferrer",
+  },
+  {
+    id: "github", // Un nuevo identificador para GitHub
+    title: "GitHub",
+    href: "https://github.com/MaleUrquizu",
+    target: "_blank",
+    rel: "noopener noreferrer",
+  },
 ];
 
 const services = [
@@ -73,6 +87,7 @@ const services = [
     title: "Exploradora de Tecnologías",
     icon: creator,
   },
+  
 ];
 
 const technologies = [
