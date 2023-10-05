@@ -2,17 +2,8 @@ import React from "react";
 import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
-/*import { navLinks } from "../constants";
-
-import linkedin from "../assets/linkedin.png";
-import github from "../assets/Git-Hub.png";*/
 
 const Hero = () => {
-
-  /*const openInNewTab = (url) => {
-    const newWindow = window.open(url, "_blank", "noopener,noreferrer");
-    if (newWindow) newWindow.opener = null;
-  };*/
 
   return (
     <section className={`relative w-full h-screen mx-auto`}>
@@ -25,37 +16,6 @@ const Hero = () => {
         </div>
 
         <div>
-        {/*{navLinks.map((nav) => (
-            <div
-              key={nav.id}
-              className='rounded-full overflow-hidden cursor-pointer'
-              onClick={() => {
-                if (nav.href) {
-                  window.open(nav.href, "_blank", "noopener,noreferrer");
-                }
-              }}
-            >
-              {nav.title === "LinkedIn" && (
-                <img
-                  src={linkedin}
-                  alt='Linkedin'
-                  width={60}
-                  height={60}
-                  className='w-50 h-50 object-cover'
-                />
-              )}
-
-              {nav.title === "GitHub" && (
-                <img
-                  src={github}
-                  alt='GitHub'
-                  width={60}
-                  height={60}
-                  className='w-50 h-50 object-cover'
-                />
-              )}
-            </div>
-              ))}*/}
           <h1 className={`${styles.heroHeadText} text-white`}>
             Hola, soy <span className='text-[#915EFF]'>Malena</span>
           </h1>

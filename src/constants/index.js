@@ -33,6 +33,9 @@ import Factoría from "../assets/Factoría.png";
 import Telefonica from "../assets/Telefonica.png";
 import TW from "../assets/TW.png";
 
+import linkedin from "../assets/linkedin.png";
+import github from "../assets/Git-Hub.png";
+
 export const navLinks = [
   {
     id: "CV",
@@ -57,6 +60,7 @@ export const navLinks = [
   {
     id: "linkedin", // Un nuevo identificador para LinkedIn
     title: "LinkedIn",
+    icon: linkedin,
     href: "https://www.linkedin.com/in/malenaurquizu/",
     target: "_blank",
     rel: "noopener noreferrer",
@@ -64,6 +68,7 @@ export const navLinks = [
   {
     id: "github", // Un nuevo identificador para GitHub
     title: "GitHub",
+    icon: github,
     href: "https://github.com/MaleUrquizu",
     target: "_blank",
     rel: "noopener noreferrer",
