@@ -248,7 +248,7 @@ const projects = [
       },
     ],
     image: EthicHub,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/MaleUrquizu/EthicHub",
   },
   {
     name: "Moth",
